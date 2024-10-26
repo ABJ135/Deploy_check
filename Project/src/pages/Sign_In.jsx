@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function Sign_In() {
   const navigate = useNavigate();
@@ -51,7 +52,7 @@ function Sign_In() {
             <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' type='submit'>Log In</button>
           </div>
         </form>
-        <p className='mt-4 text-center text-gray-600 text-sm'>Don't have an account? <a className='text-blue-500 hover:text-blue-700' href="/Sign_up">Sign Up</a></p>
+        <p className='mt-4 text-center text-gray-600 text-sm'>Don't have an account? <Link className='text-blue-500 hover:text-blue-700' to="/Sign_up">Sign Up</Link></p>
       </div>
     </div>
   )
